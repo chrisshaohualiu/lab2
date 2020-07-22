@@ -74,3 +74,98 @@ p {
     border-left: 3px solid #69696a;
     padding: 0px;
 }
+
+.graphic{
+    display:none;
+}
+
+@media only screen and (min-width: 768px)
+{
+    .header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-item-list{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-item{
+        margin: 5px;
+    }
+
+    .graphic{
+        position: relative;
+        display:block;
+    }
+    .main{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .about-graphics{
+        position: relative;
+        top: 70px;
+        display:flex;
+        flex-direction: row;
+    }
+
+    .about{
+        top: 200px;
+        flex:1;
+    }
+
+    .graphic{
+        flex:1;
+        position: relative;
+    }
+
+    .btn-link{
+        display: inline-block;
+    }
+    
+    .circle1{
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        background-color:  rgba(247, 136, 167, 0.6);
+        border-radius: 50%;
+        right: 10%;
+    }
+
+    .circle2{
+        position:absolute;
+        height: 150px;
+        width: 150px;
+        background-color:  rgba(247, 193, 162, 0.7);
+        border-radius: 50%;
+        right: 0;
+        top: 55%;
+
+    }
+
+    .circle3{
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background-color:   rgba(207, 130, 213, 0.6);
+        border-radius: 50%;
+        right: 0;
+        top: 20%;
+
+    }
+
+    .bottom{
+        position:absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10px;
+    }
+
+
+    
+}
