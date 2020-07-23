@@ -76,7 +76,7 @@ p {
 }
 
 .graphic{
-    display:none;
+    /* display:none; */
 }
 
 @media only screen and (min-width: 768px)
@@ -102,12 +102,9 @@ p {
         position: relative;
         display:block;
     }
-    .main{
-        display:flex;
-        flex-direction: column;
-    }
 
-    .about-graphics{
+
+    .main{
         position: relative;
         top: 70px;
         display:flex;
@@ -128,39 +125,37 @@ p {
         display: inline-block;
     }
     
-    .circle1{
+    .circle{
         position: absolute;
+        border-radius: 50%;
+    }
+
+    .circle1{ 
         height: 200px;
         width: 200px;
         background-color:  rgba(247, 136, 167, 0.6);
-        border-radius: 50%;
         right: 10%;
     }
 
     .circle2{
-        position:absolute;
         height: 150px;
         width: 150px;
         background-color:  rgba(247, 193, 162, 0.7);
-        border-radius: 50%;
         right: 0;
         top: 55%;
-
     }
 
     .circle3{
-        position: absolute;
         height: 100px;
         width: 100px;
         background-color:   rgba(207, 130, 213, 0.6);
-        border-radius: 50%;
         right: 0;
         top: 20%;
 
     }
 
     .bottom{
-        position:absolute;
+        position:fixed;
         left: 50%;
         transform: translateX(-50%);
         bottom: 10px;
